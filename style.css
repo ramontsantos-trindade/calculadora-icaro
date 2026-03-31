@@ -1,0 +1,18 @@
+body{
+
+    align-items: flex-start;
+    background-color: rgb(255, 255, 255);
+}
+
+.titulo{
+    padding: 100px;
+    margin: 5px;
+    background-color: rgb(67, 95, 255);
+
+}
+
+.corfont{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 60px;
+    color: white;
+}
