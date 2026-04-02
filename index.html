@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,30 +7,61 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-<header>
-    <div class="titulo">
-        <nav>
-            <h1 class="corfont">Calculadora Simples</h1>
-        </nav>
-        
-    </div>
-    
-</header>
+
+    <header>
+        <div class="titulo">
+            <nav>
+                <h1 class="corfont">Calculadora Simples</h1>
+            </nav>
+
+        </div>
+
+    </header>
 
 
 
-<main>
-    
-</main>
+    <main>
+
+
+        <div class="calc">
+
+            <input type="text" id="display" disabled>
+
+            <div class="num">
+                <button onclick="addNumero('1')">1</button>
+                <button onclick="addNumero('2')">2</button>
+                <button onclick="addNumero('3')">3</button>
+                <button onclick="addNumero('4')">4</button>
+                <button onclick="addNumero('5')">5</button>
+                <button onclick="addNumero('6')">6</button>
+                <button onclick="addNumero('7')">7</button>
+                <button onclick="addNumero('8')">8</button>
+                <button onclick="addNumero('9')">9</button>
+                <button onclick="addNumero('0')">0</button>
+
+
+            </div>
+            <div class="ops">
+                <button onclick="addOperador('+')">+</button>
+                <button onclick="addOperador('-')">-</button>
+                <button onclick="addOperador('*')">*</button>
+                <button onclick="addOperador('/')">/</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="limpar()">C</button>
+            </div>
+        </div>
+
+    </main>
 
 
 
-<footer>
+    <footer>
 
-</footer>
+    </footer>
 
-
+<script src="script.js"></script>
 </body>
+
 </html>
