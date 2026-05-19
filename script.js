@@ -1,48 +1,12 @@
-let display;
-
-window.onload = function () {
-    display = document.getElementById("display");
-
+function appendtodisplay(value) {
+    document.getElementById('display').value += value
 }
-    let numero1 = "";
-    let operador = "";
-    let numero2 = "";
 
-    function addNumero(num) {
-        display.value += num;
+function resultado() {
+    const display = document.getElementById('display')
+    try {
+        display.value = eval(display.value)
+    } catch (error) {
+        display.value = 'errado'
     }
-
-    function addOperador(op) {
-        numero1 = display.value;
-        operador = op;
-        display.value = "";
-    }
-
-    function calcular() {
-        numero2 = display.value;
-
-        if (operator === "+") {
-            display.value = Number(numero1) + Number(numero2);
-        }
-
-        if (operator === "-") {
-            display.value = Number(numero1) - Number(numero2);
-        }
-
-        if (operator === "*") {
-            display.value = Number(numero1) * Number(numero2);
-        }
-
-        if (operator === "/") {
-            display.value = Number(numero1) / Number(numero2);
-        }
-
-    }
-
-
-function limpar() {
-        display.value = "";
-        numero1 = "";
-        numero2 = "";
-        operador = "";
-    }
+}
